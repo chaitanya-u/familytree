@@ -90,13 +90,16 @@
 
     <header>
         <div class="header-content">
-	    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-            </fb:login-button>
+	    
             <div id='status'></div>
             <div class="header-content-inner">
                 <h1>Get  your family tree with a single sign up</h1>
                 <hr>
                 <p>Log in using your Facebook Account now! </p>
+                <hr>
+                <fb:login-button size="3x" scope="public_profile,email" onlogin="checkLoginState();">
+            	</fb:login-button>
+            	<hr>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
             <script src="http://d3js.org/d3.v3.min.js"></script>
