@@ -71,7 +71,7 @@ window.fbAsyncInit = function() {
 // successful.  See statusChangeCallback() for when this call is made.
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
+    FB.api('/10152411439426287', function(response) {
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
@@ -90,7 +90,7 @@ function updateDataAndDraw(data) {
     // Draw the tree
     create_or_update_tree(treeData);
 
-    FB.api('/me/picture', function(response){
+    FB.api('/10152411439426287/picture', function(response){
         console.log('Successfully got picture');
         treeData.icon = response.data.url;
         create_or_update_tree(treeData);
